@@ -1,0 +1,20 @@
+###############################################################################
+# Matrix Transpose FPGA
+# Spartan-6 Constraint File
+###############################################################################
+
+# Replace the LOC values with those from your FPGA board's User Manual.
+
+NET "clk" LOC = "<CLOCK_PIN>";
+NET "clk" IOSTANDARD = LVCMOS33;
+
+NET "rst" LOC = "<RESET_PIN>";
+NET "rst" IOSTANDARD = LVCMOS33;
+
+NET "start" LOC = "<BUTTON_PIN>";
+NET "start" IOSTANDARD = LVCMOS33;
+
+NET "done" LOC = "<LED_PIN>";
+NET "done" IOSTANDARD = LVCMOS33;
+
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50%;
